@@ -1,0 +1,42 @@
+{
+    "session_metadata": {
+        "car": "ks_porsche_911_gt3_r_2016",
+        "track": "monza",
+        "compound": "Medium",
+        "date": "20260929_060451"
+    },
+    "driver_averages": {
+        "avg_fuel_per_lap": 2.767,
+        "avg_wear_per_lap_pct": 2.433
+    },
+    "lap_telemetry": [
+        {
+            "lap": 1,
+            "lap_time_sec": 109.5,
+            "fuel_used_liters": 2.8,
+            "tyre_wear_loss_pct": 0.025,
+            "track_cuts": 0
+        },
+        {
+            "lap": 2,
+            "lap_time_sec": 108.9,
+            "fuel_used_liters": 2.7,
+            "tyre_wear_loss_pct": 0.024,
+            "track_cuts": 1
+        },
+        {
+            "lap": 3,
+            "lap_time_sec": 109.1,
+            "fuel_used_liters": 2.9,
+            "tyre_wear_loss_pct": 0.026,
+            "track_cuts": 0
+        },
+        {
+            "lap": 4,
+            "lap_time_sec": 108.7,
+            "fuel_used_liters": 2.7,
+            "tyre_wear_loss_pct": 0.023,
+            "track_cuts": 0
+        }
+    ]
+}

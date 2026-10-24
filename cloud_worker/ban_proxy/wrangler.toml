@@ -1,0 +1,7 @@
+name = "cesium-ban-list"
+main = "worker.js"
+compatibility_date = "2025-01-01"
+
+[vars]
+BAN_CHANNEL_ID = "1562494436783554611"
+PINNED_MESSAGE_ID = "1562495016314736822"

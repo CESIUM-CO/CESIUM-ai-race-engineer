@@ -1,0 +1,441 @@
+
+===== Cesium AI Race Engineer  2026-10-13 12:57:15 =====
+gui.py demo: switch the radio on and off, change the language, open the log.
+
+===== Cesium AI Race Engineer  2026-10-13 12:58:12 =====
+gui.py demo: switch the radio on and off, change the language, open the log.
+
+===== Cesium AI Race Engineer  2026-10-13 12:58:41 =====
+gui.py demo: switch the radio on and off, change the language, open the log.
+backend language -> ar
+backend language -> it
+backend language -> en
+
+===== Cesium AI Race Engineer  2026-10-13 13:01:05 =====
+[VOICE] Speaking with the Windows voice for now. The natural voice is getting ready in the background and will take over by itself.
+[CLOUD] No ANTHROPIC_API_KEY set, cloud coach is off (everything else works).
+========================================================
+      PITWALL RACE ENGINEER ONLINE (v3.3)
+      Push-to-talk: Keyboard: F
+      Quit hotkey:  CTRL+SHIFT+Q
+========================================================
+
+🎙️ [PITWALL RADIO]: "Engineer online. Waiting for track session."
+[STATUS] Game data layout detected: A (older Assetto Corsa). Flags and penalties are now readable.
+[PTT] Mouse input is off (ModuleNotFoundError: No module named 'mouse'). Run:  pip install mouse
+[PTT] Joystick input is off (ModuleNotFoundError: No module named 'pygame'). Run:  pip install pygame   (version 2.0 or newer)
+[PTT] Ready. Push-to-talk = Keyboard: F
+[AI] Built-in AI ready in 4.2s (qwen2.5-1.5b-instruct-q4_k_m.gguf).
+[VOICE INPUT] Loading speech model (first run downloads it, be patient)...
+[VOICE] Natural voice ready (im_nicola, italian accent). From now on he speaks with it.
+[VOICE] A new sentence takes 2.8s to generate on this PC. Common calls are pre-recorded, but if new ones feel late, set KOKORO_QUALITY = "fast" in config.py.
+[VOICE INPUT] Ready. Hold your push-to-talk button to talk (Keyboard: F).
+
+[STATUS] Telemetry active (session #1). Tracking reset.
+[STATUS] Session: Porsche 911 (992) GT3 RS Weissach Package | No Hesi Spec @ Nurburgring - GP (Grip (Toyo R888R))
+
+🎙️ [PITWALL RADIO]: "Alright, Porsche 911 (992) GT3 RS Weissach Package | No Hesi Spec at Nurburgring - GP. Welcome back. Last time here you used 14.1 litres a lap."
+[SPOTTER] Car positions look good (from the Pitwall Spotter app). Spotter is on.
+
+🎧 [DRIVER]: yeah listen i'm gonna come
+[AI] answered in 2.2s
+
+🎙️ [PITWALL RADIO]: "Roger, I'll keep an eye on things here."
+[PTT] Rebind: press the key or button you want for push-to-talk (Esc cancels)...
+[PTT] Push-to-talk is now: Keyboard: Y
+
+🎧 [DRIVER]: yo can you hear me
+[AI] answered in 1.2s
+
+🎙️ [PITWALL RADIO]: "I'm here, can hear you fine."
+[PTT] Rebind: press the key or button you want for push-to-talk (Esc cancels)...
+[PTT] Push-to-talk is now: Keyboard: 3
+
+🎧 [DRIVER]: i'm trying to see the buttons that can be pressed to talk to you and you hear me
+[AI] answered in 2.2s
+
+🎙️ [PITWALL RADIO]: "I'm here, can hear you fine."
+
+🎙️ [PITWALL RADIO]: "Tyres are cold. Build the temperature gently."
+
+Radio stopping...
+
+🎙️ [PITWALL RADIO]: "Session finished. Everything is saved. Engineer signing off."
+Engineer stopped.
+
+===== Cesium AI Race Engineer  2026-10-13 13:03:25 =====
+[VOICE] Speaking with the Windows voice for now. The natural voice is getting ready in the background and will take over by itself.
+[CLOUD] No ANTHROPIC_API_KEY set, cloud coach is off (everything else works).
+========================================================
+      PITWALL RACE ENGINEER ONLINE (v3.3)
+      Push-to-talk: Keyboard: F
+      Quit hotkey:  CTRL+SHIFT+Q
+========================================================
+
+🎙️ [PITWALL RADIO]: "Engineer online. Waiting for track session."
+[STATUS] Game data layout detected: A (older Assetto Corsa). Flags and penalties are now readable.
+[PTT] Mouse input is off (ModuleNotFoundError: No module named 'mouse'). Run:  pip install mouse
+[PTT] Joystick input is off (ModuleNotFoundError: No module named 'pygame'). Run:  pip install pygame   (version 2.0 or newer)
+[PTT] Ready. Push-to-talk = Keyboard: 3
+[VOICE INPUT] Loading speech model (first run downloads it, be patient)...
+[VOICE] Natural voice ready (im_nicola, italian accent). From now on he speaks with it.
+[AI] Built-in AI ready in 3.4s (qwen2.5-1.5b-instruct-q4_k_m.gguf).
+[VOICE INPUT] Ready. Hold your push-to-talk button to talk (Keyboard: 3).
+
+[STATUS] Telemetry active (session #1). Tracking reset.
+[STATUS] Session: Porsche 911 (992) GT3 RS Weissach Package | No Hesi Spec @ Nurburgring - GP (Grip (Toyo R888R))
+
+🎙️ [PITWALL RADIO]: "Alright, Porsche 911 (992) GT3 RS Weissach Package | No Hesi Spec at Nurburgring - GP. Welcome back. Last time here you used 14.1 litres a lap."
+[SPOTTER] Car positions look good (from the Pitwall Spotter app). Spotter is on.
+
+🎙️ [PITWALL RADIO]: "Track limits. Watch for a penalty."
+[TYRE] psi FL/FR/RL/RR = [35.0, 34.1, 33.4, 32.7]  core = [80, 74, 69, 64]
+
+🎙️ [PITWALL RADIO] (waiting for him to finish): "Front-left pressure is 35 PSI. You must slow down!"
+[TYRE] psi FL/FR/RL/RR = [35.1, 34.2, 33.4, 32.7]  core = [81, 75, 68, 64]
+[TYRE] psi FL/FR/RL/RR = [35.1, 34.3, 33.4, 32.7]  core = [81, 75, 68, 63]
+[TYRE] psi FL/FR/RL/RR = [35.2, 34.4, 33.3, 32.6]  core = [82, 76, 68, 63]
+[TYRE] psi FL/FR/RL/RR = [35.2, 34.4, 33.3, 32.6]  core = [82, 76, 68, 63]
+[TYRE] psi FL/FR/RL/RR = [35.2, 34.4, 33.3, 32.6]  core = [82, 76, 68, 63]
+[TYRE] psi FL/FR/RL/RR = [35.2, 34.4, 33.2, 32.6]  core = [82, 76, 68, 63]
+[TYRE] psi FL/FR/RL/RR = [35.2, 34.5, 33.2, 32.6]  core = [82, 77, 67, 63]
+[TYRE] psi FL/FR/RL/RR = [35.1, 34.5, 33.1, 32.5]  core = [81, 77, 67, 63]
+
+🎙️ [PITWALL RADIO]: "Front-left pressure is 35 PSI. You must slow down!"
+[TYRE] psi FL/FR/RL/RR = [35.1, 34.5, 33.0, 32.5]  core = [81, 77, 66, 62]
+[TYRE] psi FL/FR/RL/RR = [35.1, 34.5, 33.0, 32.5]  core = [81, 77, 66, 62]
+[TYRE] psi FL/FR/RL/RR = [35.2, 34.5, 33.0, 32.4]  core = [82, 77, 66, 62]
+[TYRE] psi FL/FR/RL/RR = [35.2, 34.5, 33.0, 32.4]  core = [82, 77, 66, 62]
+[TYRE] psi FL/FR/RL/RR = [35.1, 34.4, 33.0, 32.4]  core = [81, 76, 66, 62]
+[TYRE] psi FL/FR/RL/RR = [35.1, 34.4, 33.0, 32.4]  core = [81, 76, 66, 61]
+[TYRE] psi FL/FR/RL/RR = [35.1, 34.3, 33.0, 32.4]  core = [81, 75, 66, 61]
+[TYRE] psi FL/FR/RL/RR = [35.1, 34.2, 33.0, 32.4]  core = [81, 75, 66, 61]
+[TYRE] psi FL/FR/RL/RR = [35.0, 34.2, 33.0, 32.4]  core = [81, 74, 66, 61]
+
+🎙️ [PITWALL RADIO]: "Front-left pressure is 35 PSI. You must slow down!"
+
+🎙️ [PITWALL RADIO]: "Fuel for 1.4 laps only. Box this lap."
+
+🎙️ [PITWALL RADIO]: "Tyres are cold. Build the temperature gently."
+
+🎙️ [PITWALL RADIO]: "Fuel for 0.9 laps only. Box this lap."
+
+🎙️ [PITWALL RADIO]: "You had a bit extra. I'll call the fuel a little later next time."
+
+🎙️ [PITWALL RADIO] (waiting for him to finish): "Pit limiter!"
+
+🎙️ [PITWALL RADIO]: "Pit limiter!"
+
+Radio stopping...
+
+🎙️ [PITWALL RADIO]: "Session finished. Everything is saved. Engineer signing off."
+Engineer stopped.
+Goodbye.
+
+===== Cesium AI Race Engineer  2026-10-14 10:15:59 =====
+gui.py demo: switch the radio on and off, change the language, open the log.
+backend language -> ar
+backend language -> en
+
+===== Cesium AI Race Engineer  2026-10-15 04:38:12 =====
+gui.py demo: switch the radio on and off, change the language, open the log.
+backend language -> ar
+backend language -> it
+backend language -> en
+
+===== Cesium AI Race Engineer  2026-10-15 04:39:22 =====
+[UPDATE] Up to date (v0.1.0-beta).
+[VOICE] Speaking with the Windows voice for now. The natural voice is getting ready in the background and will take over by itself.
+[CLOUD] No ANTHROPIC_API_KEY set, cloud coach is off (everything else works).
+========================================================
+      PITWALL RACE ENGINEER ONLINE (v3.3)
+      Push-to-talk: Keyboard: 3
+      Quit hotkey:  CTRL+SHIFT+Q
+========================================================
+
+🎙️ [PITWALL RADIO]: "Engineer online. Waiting for track session."
+[STATUS] Searching for Assetto Corsa...   [PTT] Mouse input is off (ModuleNotFoundError: No module named 'mouse'). Run:  pip install mouse
+[PTT] Joystick input is off (ModuleNotFoundError: No module named 'pygame'). Run:  pip install pygame   (version 2.0 or newer)
+[PTT] Ready. Push-to-talk = Keyboard: 3
+[AI] Built-in AI ready in 2.9s (qwen2.5-1.5b-instruct-q4_k_m.gguf).
+[VOICE INPUT] Loading speech model (first run downloads it, be patient)...
+[VOICE] Natural voice ready (im_nicola, italian accent). From now on he speaks with it.
+[VOICE] A new sentence takes 1.8s to generate on this PC. Common calls are pre-recorded, but if new ones feel late, set KOKORO_QUALITY = "fast" in config.py.
+[VOICE INPUT] Ready. Hold your push-to-talk button to talk (Keyboard: 3).
+[PTT] Rebind: press the key or button you want for push-to-talk (Esc cancels)...
+[PTT] Push-to-talk is now: Keyboard: L
+[PTT] Rebind: press the key or button you want for push-to-talk (Esc cancels)...
+[PTT] Push-to-talk is now: Keyboard: O
+[PTT] Rebind: press the key or button you want for push-to-talk (Esc cancels)...
+[PTT] Rebind cancelled. Push-to-talk stays: Keyboard: O
+[PTT] Rebind: press the key or button you want for push-to-talk (Esc cancels)...
+[PTT] Rebind cancelled. Push-to-talk stays: Keyboard: O
+
+🎙️ [PITWALL RADIO]: "Radio check. Box, box, box. Tyres are up to temperature."
+[VOICE] Voice changed to bf_isabella. Recording the common calls in the new voice in the background...
+
+🎙️ [PITWALL RADIO]: "Radio check. Box, box, box. Tyres are up to temperature."
+[VOICE] Recording 128 of his common calls so they play instantly (one time only, in the background)...
+[VOICE] Voice changed to if_sara. Recording the common calls in the new voice in the background...
+
+🎙️ [PITWALL RADIO]: "Radio check. Box, box, box. Tyres are up to temperature."
+[VOICE] Recording 128 of his common calls so they play instantly (one time only, in the background)...
+[VOICE] Voice changed to im_nicola. Recording the common calls in the new voice in the background...
+
+🎙️ [PITWALL RADIO] (waiting for him to finish): "Radio check. Box, box, box. Tyres are up to temperature."
+[VOICE] Voice changed to bm_george. Recording the common calls in the new voice in the background...
+
+🎙️ [PITWALL RADIO]: "Radio check. Box, box, box. Tyres are up to temperature."
+[VOICE] ...25% recorded
+[VOICE] ...25% recorded
+
+Radio stopping...
+
+🎙️ [PITWALL RADIO]: "Session finished. Everything is saved. Engineer signing off."
+Engineer stopped.
+
+===== Cesium AI Race Engineer  2026-10-15 08:28:56 =====
+[UPDATE] Up to date (v0.1.0-beta).
+[VOICE] Speaking with the Windows voice for now. The natural voice is getting ready in the background and will take over by itself.
+[AI] Built-in AI ready in 2.0s (qwen2.5-1.5b-instruct-q4_k_m.gguf).
+[CLOUD] No ANTHROPIC_API_KEY set, cloud coach is off (everything else works).
+========================================================
+      PITWALL RACE ENGINEER ONLINE (v3.3)
+      Push-to-talk: SUZUKA RACING WHEEL: Button 6
+      Quit hotkey:  CTRL+SHIFT+Q
+========================================================
+
+🎙️ [PITWALL RADIO]: "Engineer online. Waiting for track session."
+[STATUS] Searching for Assetto Corsa...   [PTT] Ready. Push-to-talk = SUZUKA RACING WHEEL: Button 6
+[PTT] pygame 2.6.1, SDL 2.28.4, joystick drivers: RAWINPUT=0 WGI=0
+[PTT] Controller connected: SUZUKA RACING WHEEL (index 0, instance 0, 24 buttons, 1 hats, 4 axes)
+[VOICE INPUT] Loading speech model (first run downloads it, be patient)...
+[VOICE] Natural voice ready (im_nicola, italian accent). From now on he speaks with it.
+[VOICE] A new sentence takes 1.9s to generate on this PC. Common calls are pre-recorded, but if new ones feel late, set KOKORO_QUALITY = "fast" in config.py.
+[VOICE INPUT] Ready. Hold your push-to-talk button to talk (SUZUKA RACING WHEEL: Button 6).
+[PTT] Rebind: press the key or button you want for push-to-talk (Esc cancels)...
+[PTT] Push-to-talk is now: SUZUKA RACING WHEEL: Button 3
+[STATUS] Game data layout detected: A (older Assetto Corsa). Flags and penalties are now readable.
+
+[STATUS] Telemetry active (session #1). Tracking reset.
+[STATUS] Session: Porsche 911 (992) GT3 RS Weissach Package | No Hesi Spec @ Nurburgring - GP (Grip (Toyo R888R))
+
+🎙️ [PITWALL RADIO]: "Alright, Porsche 911 (992) GT3 RS Weissach Package | No Hesi Spec at Nurburgring - GP. Welcome back. Last time here you used 14.1 litres a lap."
+[SPOTTER] Car positions look good (from the Pitwall Spotter app). Spotter is on.
+
+🎧 [DRIVER]: hello
+
+🎙️ [PITWALL RADIO]: "Say again?"
+
+🎧 [DRIVER]: can you hear me
+[AI] answered in 2.6s
+
+🎙️ [PITWALL RADIO]: "I can hear you. How's it going out there?"
+
+🎧 [DRIVER]: perfectly fine
+
+🎙️ [PITWALL RADIO]: "Say again?"
+
+🎙️ [PITWALL RADIO]: "Car on your left."
+
+🎙️ [PITWALL RADIO] (waiting for him to finish): "Left clear."
+
+🎙️ [PITWALL RADIO]: "Car on your left."
+
+🎙️ [PITWALL RADIO]: "Car on your left."
+
+🎙️ [PITWALL RADIO] (waiting for him to finish): "Left clear."
+
+🎙️ [PITWALL RADIO] (waiting for him to finish): "Car on your left."
+
+🎙️ [PITWALL RADIO] (waiting for him to finish): "Left clear."
+
+🎧 [DRIVER]: who is it lewis hamilton
+[FLAG] game reports flag=2 (yellow), penalty seconds=0.0
+
+🎙️ [PITWALL RADIO]: "Yellow flag. Caution."
+[FLAG] game reports flag=0 (none), penalty seconds=0.0
+[FLAG] game reports flag=2 (yellow), penalty seconds=0.0
+
+🎙️ [PITWALL RADIO]: "Yellow flag. Caution."
+[FLAG] game reports flag=0 (none), penalty seconds=0.0
+[AI] answered in 3.5s
+
+🎙️ [PITWALL RADIO] (waiting for him to finish): "Lewis Hamilton is a professional racing driver and former world champion. He doesn't drive the Porsche 911 GT3 RS."
+[VOICE] new sentence took 1.5s to generate (it is saved, so next time it is instant)
+[VOICE] new sentence took 1.4s to generate (it is saved, so next time it is instant)
+
+🎙️ [PITWALL RADIO] (waiting for him to finish): "Track limits. Watch for a penalty."
+
+[STATUS] Disconnected (session ended or menu). Waiting for reconnection, retrying quietly...
+
+🎙️ [PITWALL RADIO]: "Telemetry disconnected. Waiting for reconnection."
+
+Radio stopping...
+
+🎙️ [PITWALL RADIO]: "Session finished. Everything is saved. Engineer signing off."
+Engineer stopped.
+[PTT] Controller disconnected: SUZUKA RACING WHEEL
+
+===== Cesium AI Race Engineer  2026-10-22 23:05:25 =====
+[UPDATE] Up to date (v0.1.0).
+[VOICE] Speaking with the Windows voice for now. The natural voice is getting ready in the background and will take over by itself.
+[AI] Starting the AI helper: C:\Users\lionb\PycharmProjects\PythonProject\AI_RACE_ENGINNER_3.12\.venv\Scripts\python.exe C:\Users\lionb\PycharmProjects\PythonProject\AI_RACE_ENGINNER_3.12\llm_worker.py
+[CLOUD] No ANTHROPIC_API_KEY set, cloud coach is off (everything else works).
+========================================================
+      PITWALL RACE ENGINEER ONLINE (v3.3)
+      Push-to-talk: SUZUKA RACING WHEEL: Button 3
+      Quit hotkey:  CTRL+SHIFT+Q
+========================================================
+
+🎙️ [PITWALL RADIO]: "Engineer online. Waiting for track session."
+[STATUS] Searching for Assetto Corsa...   [VOICE INPUT] Loading speech model (first run downloads it, be patient)...
+[AI] Built-in AI ready in 2.5s (qwen2.5-1.5b-instruct-q4_k_m.gguf).
+[PTT] Ready. Push-to-talk = SUZUKA RACING WHEEL: Button 3
+[PTT] pygame 2.6.1, SDL 2.28.4, joystick drivers: RAWINPUT=0 WGI=0
+[VOICE INPUT] Ready. Hold your push-to-talk button to talk (SUZUKA RACING WHEEL: Button 3).
+[VOICE] Natural voice ready (im_nicola, italian accent). From now on he speaks with it.
+[VOICE] A new sentence takes 1.7s to generate on this PC. Common calls are pre-recorded, but if new ones feel late, set KOKORO_QUALITY = "fast" in config.py.
+[VOICE] Recording 31 of his common calls so they play instantly (one time only, in the background)...
+[OLLAMA] Not available: Ollama is not running at http://localhost:11434 (start the Ollama app, or set USE_OLLAMA = False).
+[OLLAMA] The built-in AI is used instead; nothing else changes.
+[PTT] pygame / SDL sees no game controller. If a wheel or gamepad is plugged in: check that it is listed in Windows 'Set up USB game controllers' (run joy.cpl) and that no other program holds it exclusively.
+[VOICE] ...22% recorded
+[VOICE] new sentence took 1.5s to generate (it is saved, so next time it is instant)
+[VOICE] new sentence took 0.8s to generate (it is saved, so next time it is instant)
+[VOICE] ...45% recorded
+[VOICE] ...67% recorded
+[VOICE] new sentence took 1.0s to generate (it is saved, so next time it is instant)
+[VOICE] ...90% recorded
+[VOICE] new sentence took 1.6s to generate (it is saved, so next time it is instant)
+[VOICE] Common calls recorded. They now play instantly.
+
+Radio stopping...
+
+🎙️ [PITWALL RADIO]: "Session finished. Everything is saved. Engineer signing off."
+Engineer stopped.
+
+===== Cesium AI Race Engineer  2026-10-23 06:59:47 =====
+[UPDATE] Up to date (v0.1.0).
+[VOICE] Speaking with the Windows voice for now. The natural voice is getting ready in the background and will take over by itself.
+[AI] Starting the AI helper: C:\Users\lionb\PycharmProjects\PythonProject\AI_RACE_ENGINNER_3.12\.venv\Scripts\python.exe C:\Users\lionb\PycharmProjects\PythonProject\AI_RACE_ENGINNER_3.12\llm_worker.py
+[CHAT] Memory loaded from C:\Users\lionb\AppData\Roaming\CesiumAIRaceEngineer\data\memory_store.json: 1 people, 0 notes.
+[CLOUD] No ANTHROPIC_API_KEY set, cloud coach is off (everything else works).
+========================================================
+      PITWALL RACE ENGINEER ONLINE (v3.3)
+      Push-to-talk: SUZUKA RACING WHEEL: Button 3
+      Quit hotkey:  CTRL+SHIFT+Q
+========================================================
+
+🎙️ [PITWALL RADIO]: "Engineer online. Waiting for track session."
+[STATUS] Searching for Assetto Corsa...   [VOICE INPUT] Loading speech model (first run downloads it, be patient)...
+[AI] Built-in AI ready in 4.2s (qwen2.5-1.5b-instruct-q4_k_m.gguf).
+
+Radio stopping...
+
+🎙️ [PITWALL RADIO] (waiting for him to finish): "Session finished. Everything is saved. Engineer signing off."
+[PTT] Ready. Push-to-talk = SUZUKA RACING WHEEL: Button 3
+[PTT] pygame 2.6.1, SDL 2.28.4, joystick drivers: RAWINPUT=0 WGI=0
+[OLLAMA] Not available: Ollama is not running at http://localhost:11434 (start the Ollama app, or set USE_OLLAMA = False).
+[OLLAMA] The built-in AI is used instead; nothing else changes.
+[VOICE INPUT] Ready. Hold your push-to-talk button to talk (SUZUKA RACING WHEEL: Button 3).
+[VOICE] Natural voice ready (im_nicola, italian accent). From now on he speaks with it.
+[VOICE] A new sentence takes 2.8s to generate on this PC. Common calls are pre-recorded, but if new ones feel late, set KOKORO_QUALITY = "fast" in config.py.
+[PTT] pygame / SDL sees no game controller. If a wheel or gamepad is plugged in: check that it is listed in Windows 'Set up USB game controllers' (run joy.cpl) and that no other program holds it exclusively.
+[PTT] Rebind: press the key or button you want for push-to-talk (Esc cancels)...
+[PTT] Push-to-talk is now: Keyboard: U
+Engineer stopped.
+[CLOUD] No ANTHROPIC_API_KEY set, cloud coach is off (everything else works).
+========================================================
+      PITWALL RACE ENGINEER ONLINE (v3.3)
+      Push-to-talk: Keyboard: U
+      Quit hotkey:  CTRL+SHIFT+Q
+========================================================
+
+🎙️ [PITWALL RADIO] (waiting for him to finish): "Engineer online. Waiting for track session."
+[STATUS] Searching for Assetto Corsa...   
+Radio stopping...
+
+🎙️ [PITWALL RADIO]: "Session finished. Everything is saved. Engineer signing off."
+Engineer stopped.
+[VOICE INPUT] Push-to-talk ignored: the radio is switched off.
+[VOICE INPUT] Push-to-talk ignored: the radio is switched off.
+[VOICE INPUT] Push-to-talk ignored: the radio is switched off.
+[VOICE INPUT] Push-to-talk ignored: the radio is switched off.
+[VOICE INPUT] Push-to-talk ignored: the radio is switched off.
+[VOICE INPUT] Push-to-talk ignored: the radio is switched off.
+[VOICE INPUT] Push-to-talk ignored: the radio is switched off.
+[VOICE INPUT] Push-to-talk ignored: the radio is switched off.
+[CLOUD] No ANTHROPIC_API_KEY set, cloud coach is off (everything else works).
+========================================================
+      PITWALL RACE ENGINEER ONLINE (v3.3)
+      Push-to-talk: Keyboard: U
+      Quit hotkey:  CTRL+SHIFT+Q
+========================================================
+
+🎙️ [PITWALL RADIO]: "Engineer online. Waiting for track session."
+[STATUS] Searching for Assetto Corsa...   
+Radio stopping...
+
+🎙️ [PITWALL RADIO]: "Session finished. Everything is saved. Engineer signing off."
+Engineer stopped.
+Windows fatal exception: access violation
+
+Thread 0x00008f38 (most recent call first):
+  <no Python frame>
+
+===== Cesium AI Race Engineer  2026-10-23 07:07:29 =====
+[UPDATE] Up to date (v0.1.0).
+[VOICE] Speaking with the Windows voice for now. The natural voice is getting ready in the background and will take over by itself.
+[CHAT] Memory loaded from C:\Users\lionb\PycharmProjects\PythonProject\AI_RACE_ENGINNER_3.12\data\memory_store.json: 1 people, 0 notes.
+[AI] Starting the AI helper: C:\Users\lionb\PycharmProjects\PythonProject\AI_RACE_ENGINNER_3.12\.venv\Scripts\python.exe C:\Users\lionb\PycharmProjects\PythonProject\AI_RACE_ENGINNER_3.12\llm_worker.py
+[VOICE INPUT] Loading speech model (first run downloads it, be patient)...
+[CLOUD] No ANTHROPIC_API_KEY set, cloud coach is off (everything else works).
+========================================================
+      PITWALL RACE ENGINEER ONLINE (v3.3)
+      Push-to-talk: Keyboard: U
+      Quit hotkey:  CTRL+SHIFT+Q
+========================================================
+
+🎙️ [PITWALL RADIO]: "Engineer online. Waiting for track session."
+[STATUS] Searching for Assetto Corsa...   [PTT] Ready. Push-to-talk = Keyboard: U
+[AI] Built-in AI ready in 1.9s (qwen2.5-1.5b-instruct-q4_k_m.gguf).
+[PTT] pygame 2.6.1, SDL 2.28.4, joystick drivers: RAWINPUT=0 WGI=0
+[VOICE] Natural voice ready (im_nicola, italian accent). From now on he speaks with it.
+[VOICE INPUT] Ready. Hold your push-to-talk button to talk (Keyboard: U).
+[OLLAMA] Not available: Ollama is not running at http://localhost:11434 (start the Ollama app, or set USE_OLLAMA = False).
+[OLLAMA] The built-in AI is used instead; nothing else changes.
+[PTT] pygame / SDL sees no game controller. If a wheel or gamepad is plugged in: check that it is listed in Windows 'Set up USB game controllers' (run joy.cpl) and that no other program holds it exclusively.
+
+Radio stopping...
+
+🎙️ [PITWALL RADIO]: "Session finished. Everything is saved. Engineer signing off."
+[VOICE INPUT] Push-to-talk ignored: the radio is switched off.
+[VOICE INPUT] Push-to-talk ignored: the radio is switched off.
+[VOICE INPUT] Push-to-talk ignored: the radio is switched off.
+Engineer stopped.
+[VOICE INPUT] Push-to-talk ignored: the radio is switched off.
+[VOICE INPUT] Push-to-talk ignored: the radio is switched off.
+[VOICE INPUT] Push-to-talk ignored: the radio is switched off.
+[VOICE INPUT] Push-to-talk ignored: the radio is switched off.
+[VOICE INPUT] Push-to-talk ignored: the radio is switched off.
+[VOICE INPUT] Push-to-talk ignored: the radio is switched off.
+[VOICE INPUT] Push-to-talk ignored: the radio is switched off.
+[VOICE INPUT] Push-to-talk ignored: the radio is switched off.
+[VOICE INPUT] Push-to-talk ignored: the radio is switched off.
+[VOICE INPUT] Push-to-talk ignored: the radio is switched off.
+[VOICE INPUT] Push-to-talk ignored: the radio is switched off.
+[VOICE INPUT] Push-to-talk ignored: the radio is switched off.
+[CLOUD] No ANTHROPIC_API_KEY set, cloud coach is off (everything else works).
+========================================================
+      PITWALL RACE ENGINEER ONLINE (v3.3)
+      Push-to-talk: Keyboard: U
+      Quit hotkey:  CTRL+SHIFT+Q
+========================================================
+
+🎙️ [PITWALL RADIO]: "Engineer online. Waiting for track session."
+[STATUS] Searching for Assetto Corsa...   
+Radio stopping...
+
+🎙️ [PITWALL RADIO] (waiting for him to finish): "Session finished. Everything is saved. Engineer signing off."
+Engineer stopped.

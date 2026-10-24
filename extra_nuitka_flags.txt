@@ -1,0 +1,18 @@
+Add ONLY the lines for failures that --selftest actually reports.
+Check each source path against your .venv first; remove any package Nuitka says it can't find.
+
+llama_cpp DLLs missing (--include-package-data never copies DLLs):
+  --include-raw-dir=.venv\Lib\site-packages\llama_cpp\lib=llama_cpp\lib ^
+
+sounddevice / "PortAudio library not found":
+  --include-data-files=.venv\Lib\site-packages\_sounddevice_data\portaudio-binaries\*.dll=_sounddevice_data\portaudio-binaries\ ^
+
+kokoro_onnx / espeak / language_tags errors:
+  --include-package=espeakng_loader --include-package-data=espeakng_loader ^
+  --include-package-data=language_tags --include-package-data=phonemizer ^
+
+Final release build: copy your original build_nuitka.bat and add
+  --include-module=boot_guard ^
+  --include-data-files=cesium.ico=cesium.ico ^
+  --include-module=pystray._win32 ^
+plus whichever lines above were needed. Keep --windows-console-mode=disable.

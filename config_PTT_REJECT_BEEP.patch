@@ -1,0 +1,11 @@
+--- /mnt/project/config.py	1979-12-31 00:00:00.000000000 +0000
++++ config.py	2026-10-23 04:06:15.063407199 +0000
+@@ -165,6 +165,8 @@
+                                     # NOTE: the key press still reaches the game. If F does something in your Assetto Corsa
+                                     # controls, unbind it there, or set PTT_KEY to the key a wheel button is mapped to.
+ PTT_BEEP = True                     # short beep when the mic opens/closes so you KNOW it registered
++PTT_REJECT_BEEP = False              # False (default) = pressing PTT while the radio is OFF is completely silent.
++                                    # True = play a short falling two-tone "refused" cue instead. No mic, no recording either way.
+ WHISPER_MODEL = "base.en"           # "base.en" = fast (default), "small.en" = more accurate but about 3x slower to answer
+ WHISPER_HINT = ("Race engineer radio in Assetto Corsa. car, tyres, fuel, pit, box, cliff, grip, weather, "
+                 "track, lap time, damage, engine, RPM, position, penalty.")

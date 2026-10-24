@@ -1,0 +1,12 @@
+--- /mnt/project/main_pitwall.py	1979-12-31 00:00:00.000000000 +0000
++++ main_pitwall.py	2026-10-23 03:57:08.777443268 +0000
+@@ -94,7 +94,8 @@
+ 
+         self.quit_event = threading.Event()  # set by the quit hotkey
+         self.active = threading.Event()  # set while the radio is ON; the driver's voice is ignored when it is OFF
+-        self.ptt = PushToTalk(self._heard, on_press=self._pressed, on_quit=self.quit_event.set)
++        self.ptt = PushToTalk(self._heard, on_press=self._pressed, on_quit=self.quit_event.set,
++                              is_active=self.active.is_set)   # radio OFF -> PTT is refused before any beep / recording
+         self.ptt.start()
+         BackgroundLearner(self.memory, self.brain).start()
+         self.radio.prerender(self.phrases())

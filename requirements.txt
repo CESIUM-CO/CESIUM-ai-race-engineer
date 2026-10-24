@@ -1,0 +1,11 @@
+pywin32
+sounddevice
+numpy
+keyboard
+faster-whisper
+kokoro-onnx
+ddgs
+pygame
+mouse
+pystray
+pillow

@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "updated": 1792727988.769038,
+  "driver": {
+    "name": null,
+    "stats": {},
+    "prefs": {}
+  },
+  "entities": {
+    "halid": {
+      "name": "Halid",
+      "role": "real-life engineer",
+      "stats": {
+        "podiums": 120
+      },
+      "ts": 1792699826.3777895,
+      "pinned": false
+    }
+  },
+  "aliases": {},
+  "notes": []
+}

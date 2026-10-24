@@ -1,0 +1,6 @@
+# The built-in AI engine. Install with:   pip install -r requirements_ai.txt
+# llama-cpp-python's own website hosts the pre-built (no compiler needed) Windows packages.
+# Plain PyPI only has the source code, which usually fails to build on Windows. That is why the next two lines exist.
+--extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu
+--only-binary=llama-cpp-python
+llama-cpp-python
