@@ -36,8 +36,11 @@ echo [BUILD] Output: %OUT%\main_pitwall.dist
   --report="%OUT%\compilation-report.xml" ^
   --include-module=boot_guard ^
   --include-module=llm_worker --include-module=paths ^
+  --include-module=setup_advisor --include-module=track_intel ^
+  --include-module=incident_monitor --include-module=corner_coach ^
   --include-module=credentials --include-module=account_manager ^
   --include-module=cloud_coach ^
+  --include-module=updater ^
   --include-module=pystray._win32 ^
   --include-package=llama_cpp --include-package-data=llama_cpp ^
   --include-package=faster_whisper --include-package-data=faster_whisper ^

@@ -37,8 +37,11 @@ echo [BUILD] Compiling (this takes a while)...
   --output-dir="%OUT%" ^
   --include-module=boot_guard ^
   --include-module=llm_worker --include-module=paths ^
+  --include-module=setup_advisor --include-module=track_intel ^
+  --include-module=incident_monitor --include-module=corner_coach ^
   --include-module=credentials --include-module=account_manager ^
   --include-module=cloud_coach ^
+  --include-module=updater ^
   --include-module=llm_engineer ^
   --include-module=cesium_logger ^
   --include-module=pystray._win32 ^

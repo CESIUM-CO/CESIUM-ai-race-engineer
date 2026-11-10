@@ -1,114 +1,125 @@
-; ---------------------------------------------------------------------------
-;  Cesium AI Race Engineer - Inno Setup script (Inno Setup 6.3+)
-;  Build the app first:  build_nuitka.bat   ->  dist_release\main_pitwall.dist\
-;  Then compile this script. Output: installer_out\CesiumAIRaceEngineer_Setup_<ver>.exe
-; ---------------------------------------------------------------------------
+; =====================================================================================
+;  cesium_setup.iss  -  CESIUM AI Race Engineer installer (Inno Setup 6.3+)
+; =====================================================================================
 
-#define MyAppName      "Cesium AI Race Engineer"
-#define MyAppVersion   "0.1.0"            ; keep in step with config.APP_VERSION (updater compares tags)
-#define MyAppPublisher "Cesium"
-#define MyAppExeName   "CesiumAIRaceEngineer.exe"
-#define MyAppURL       "https://github.com/CESIUM-CO/CESIUM-ai-race-engineer"
-#define BuildDir       "dist_release\main_pitwall.dist"
-#define ModelFile      "models\qwen2.5-1.5b-instruct-q4_k_m.gguf"
+#define AppName        "CESIUM AI Race Engineer"
+#define AppPublisher   "CESIUM"
+#define AppExeName     "CesiumAIRaceEngineer.exe"
+#define AppURL         "https://github.com/CESIUM-CO/CESIUM-ai-race-engineer"
+#ifndef AppVersion
+  #define AppVersion   "0.1.0"
+#endif
+#define SourceDir      "dist"
+
+#define SelfUpdateByStandardUsers 0
+#if SelfUpdateByStandardUsers
+  #define UsersRight "M"
+#else
+  #define UsersRight "RX"
+#endif
 
 [Setup]
-AppId={{B7C3E5A2-6D14-4F0B-9A57-CE51UM000001}
-AppName={#MyAppName}
-AppVersion={#MyAppVersion}
-AppPublisher={#MyAppPublisher}
-AppPublisherURL={#MyAppURL}
-AppSupportURL={#MyAppURL}
-AppUpdatesURL={#MyAppURL}/releases
+AppId={{8F3B2C1E-5A47-4D9B-9E62-C3A7D1F04B58}
+AppName={#AppName}
+AppVersion={#AppVersion}
+AppVerName={#AppName} {#AppVersion}
+AppPublisher={#AppPublisher}
+AppPublisherURL={#AppURL}
+AppSupportURL={#AppURL}
+AppUpdatesURL={#AppURL}/releases
+VersionInfoVersion={#AppVersion}
+VersionInfoCompany={#AppPublisher}
+VersionInfoProductName={#AppName}
 
-; Per-user install: the in-app updater must be able to overwrite its own files.
-PrivilegesRequired=lowest
-PrivilegesRequiredOverridesAllowed=dialog
-DefaultDirName={autopf}\{#MyAppName}
-DefaultGroupName={#MyAppName}
+DefaultDirName={autopf}\CESIUM\AIRaceEngineer
+DefaultGroupName={#AppName}
 DisableProgramGroupPage=yes
+UsePreviousAppDir=yes
+
 ArchitecturesAllowed=x64compatible
 ArchitecturesInstallIn64BitMode=x64compatible
+MinVersion=10.0
 
-; The app holds this mutex while running (gui.acquire_single_instance)
-AppMutex=Local\CesiumAIRaceEngineer_SingleInstance
+PrivilegesRequired=admin
+PrivilegesRequiredOverridesAllowed=commandline
+
+AppMutex=CesiumAIRaceEngineer_SingleInstance
 CloseApplications=yes
+CloseApplicationsFilter=*.exe,*.dll,*.pyd
 RestartApplications=no
 
+OutputDir=installer_output
+OutputBaseFilename=CesiumAIRaceEngineer_Setup_{#AppVersion}
 SetupIconFile=cesium.ico
-UninstallDisplayIcon={app}\cesium.ico
-WizardStyle=modern
-WizardImageFile=wizard_side.bmp
-WizardSmallImageFile=wizard_small.bmp
-
-OutputDir=installer_out
-OutputBaseFilename=CesiumAIRaceEngineer_Setup_{#MyAppVersion}
+UninstallDisplayIcon={app}\{#AppExeName}
+UninstallDisplayName={#AppName}
 Compression=lzma2/max
 SolidCompression=yes
+LZMAUseSeparateProcess=yes
+WizardStyle=modern
+
+ShowLanguageDialog=no
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
 
-[Components]
-Name: "app";   Description: "Cesium AI Race Engineer"; Types: full compact custom; Flags: fixed
-#ifexist ModelFile
-Name: "model"; Description: "Bundled AI model (about 1 GB, skips the first-run download)"; Types: full
-#endif
-
 [Tasks]
-Name: "desktopicon"; Description: "Create a &desktop shortcut"; GroupDescription: "Shortcuts:"
+Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"
 
 [Files]
-; The whole Nuitka standalone folder: exe + DLLs + espeakng_loader + llama_cpp + ac_app + cesium.ico ...
-Source: "{#BuildDir}\*"; DestDir: "{app}"; Components: app; \
-    Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "{#SourceDir}\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "installer\post_install.bat"; DestDir: "{tmp}"; Flags: deleteafterinstall
 
-; Safety net: make sure the icon and the in-game spotter app exist even if the build changes
-Source: "cesium.ico"; DestDir: "{app}"; Components: app; Flags: ignoreversion
-Source: "ac_app\PitwallSpotter\*"; DestDir: "{app}\ac_app\PitwallSpotter"; Components: app; \
-    Excludes: "__pycache__,*.pyc,spotter_path.txt"; Flags: ignoreversion recursesubdirs createallsubdirs
-
-#ifexist ModelFile
-; Optional bundled model. local_llm.find_model() also searches <exe folder>\models
-Source: "{#ModelFile}"; DestDir: "{app}\models"; Components: model; Flags: ignoreversion
+#if FileExists("redist\vc_redist.x64.exe")
+Source: "redist\vc_redist.x64.exe"; DestDir: "{tmp}"; Flags: deleteafterinstall
 #endif
 
-; NOT shipped on purpose: data\, logs\, voice_cache\, config.py, *.db, credentials.json.
-; All of that is created per user in %APPDATA%\CesiumAIRaceEngineer at first run.
-
-[Dirs]
-; models\ is preserved by the updater (UPDATE_PRESERVE) and used by find_model()
-Name: "{app}\models"
-
 [Icons]
-Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; IconFilename: "{app}\cesium.ico"
-Name: "{group}\Uninstall {#MyAppName}"; Filename: "{uninstallexe}"
-Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; IconFilename: "{app}\cesium.ico"; Tasks: desktopicon
+Name: "{autoprograms}\{#AppName}"; Filename: "{app}\{#AppExeName}"; WorkingDir: "{app}"; IconFilename: "{app}\cesium.ico"
+Name: "{autoprograms}\Uninstall {#AppName}"; Filename: "{uninstallexe}"
+Name: "{autodesktop}\{#AppName}"; Filename: "{app}\{#AppExeName}"; WorkingDir: "{app}"; IconFilename: "{app}\cesium.ico"; Tasks: desktopicon
 
 [Run]
-; Opens the app's own wizard (installer_gui.py via --installer). It asks for admin only if the game folder needs it.
-Filename: "{app}\{#MyAppExeName}"; Parameters: "--installer"; \
-    Description: "Install the in-game spotter app for Assetto Corsa"; \
-    Flags: postinstall nowait skipifsilent unchecked
-Filename: "{app}\{#MyAppExeName}"; Description: "Launch {#MyAppName}"; \
-    Flags: postinstall nowait skipifsilent
+Filename: "{cmd}"; Parameters: "/C """"{tmp}\post_install.bat"" ""{app}"""""; \
+  StatusMsg: "Configuring environment..."; Flags: runhidden waituntilterminated
+
+[UninstallRun]
+Filename: "{sys}\taskkill.exe"; Parameters: "/F /T /IM {#AppExeName}"; Flags: runhidden; RunOnceId: "KillCesium"
 
 [UninstallDelete]
-; Files added by the self-updater are not in Inno's uninstall log
-Type: filesandordirs; Name: "{app}\_update"
 Type: filesandordirs; Name: "{app}"
 
 [Code]
-procedure CurUninstallStepChanged(CurUninstallStep: TUninstallStep);
+// Security: hardening permissions on {app}
+procedure CurStepChanged(CurStep: TSetupStep);
 var
-  UserData: String;
+  ResultCode: Integer;
+  Params: String;
+begin
+  if CurStep = ssPostInstall then
+  begin
+    WizardForm.StatusLabel.Caption := 'Securing the installation folder...';
+    Params := '"' + ExpandConstant('{app}') + '" /inheritance:r' +
+              ' /grant:r *S-1-5-18:(OI)(CI)F' +
+              ' /grant:r *S-1-5-32-544:(OI)(CI)F' +
+              ' /grant:r *S-1-5-32-545:(OI)(CI){#UsersRight}' +
+              ' /T /C /Q';
+    if Exec(ExpandConstant('{sys}\icacls.exe'), Params, '', SW_HIDE, ewWaitUntilTerminated, ResultCode)
+       and (ResultCode = 0) then
+      Log('ACL hardening applied to ' + ExpandConstant('{app}'))
+    else
+      Log('WARNING: icacls returned ' + IntToStr(ResultCode));
+  end;
+end;
+
+procedure CurUninstallStepChanged(CurUninstallStep: TUninstallStep);
 begin
   if CurUninstallStep = usPostUninstall then
   begin
-    UserData := ExpandConstant('{userappdata}\CesiumAIRaceEngineer');
-    if DirExists(UserData) and (not UninstallSilent) then
-      if MsgBox('Also delete your settings, saved keys, memory, logs and downloaded AI / voice models?' + #13#10#13#10 +
-                UserData, mbConfirmation, MB_YESNO or MB_DEFBUTTON2) = IDYES then
-        DelTree(UserData, True, True, True);
+    if (not UninstallSilent) and
+       (MsgBox('Also delete your settings, logs, voice cache, downloaded AI models and memory?' + #13#10 +
+               '(' + ExpandConstant('{userappdata}\CesiumAIRaceEngineer') + ')',
+               mbConfirmation, MB_YESNO or MB_DEFBUTTON2) = IDYES) then
+      DelTree(ExpandConstant('{userappdata}\CesiumAIRaceEngineer'), True, True, True);
   end;
 end;
